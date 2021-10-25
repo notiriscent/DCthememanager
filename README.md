@@ -7,7 +7,7 @@
 - [x] Design
 - [x] Script
 - [x] Animations
-- [ ] Downloader (File Generator)
+- [x] Downloader (File Generator)
 
 ###### If you don't know what this is for, please visit [Danilus' Repos](https://github.com/Danilus-s/DanilusChat)
 
