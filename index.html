@@ -10,39 +10,41 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <form>
-    <h1 class="theme-main-title">Main</h1>
+  <form id="formel">
+    <h1 class="theme-main-title" onclick="generate()">Main</h1>
     <span class="theme-main-color">Main Color</span>
-    <input type="color" name="Main Color" required=>
-    <input type="text" placeholder="Theme Name" required>
-    <input type="text" placeholder="Theme Version (Optional)">
-    <hr width="100%" color="black">
+    <input type="color" name="MainColor" required=>
+    <input type="text" placeholder="Theme Name" name="ThemeName" required>
+    <input type="text" placeholder="Theme Author" name="ThemeAuthor" required>
+    <input type="text" placeholder="Source/Theme Contacts" name="ThemeSrc required">
     <h1 class="theme-text-title">Text Area</h1>
-    <input type="text" placeholder="Font Name" required>
-    <input type="text" placeholder="Font Size" required>
+    <input type="text" placeholder="Font Name" name="TA_FN" required>
+    <input type="text" placeholder="Font Size" name="TA_FS" required>
     <span class="theme-text-bg">Background</span>
-    <input type="color" name="Background" required>
+    <input type="color" name="TA_BG" required>
     <span class="theme-text-fg">Foreground</span>
-    <input type="color" name="Foreground" required>
+    <input type="color" name="TA_FG" required>
     <hr width="100%" color="black">
     <h1 class="theme-input-title">Input Area</h1>
-    <input type="text" placeholder="Font Name" required>
-    <input type="text" placeholder="Font Size" required>
-    <span class-"theme-input-fg">Foreground</span>
-    <input type="color" name="Foreground" required>
+    <input type="text" placeholder="Font Name" name="IA_FN" required>
+    <input type="text" placeholder="Font Size" name="IA_FS" required>
     <span class-"theme-input-bg">Background</span>
-    <input type="color" name="Background" required>
+    <input type="color" name="IA_BG" required>
+    <span class-"theme-input-fg">Foreground</span>
+    <input type="color" name="IA_FG" required>
     <span class-"theme-input-bg">Cursor Color</span>
-    <input type="color" name="CursorC" required>
+    <input type="color" name="CursorC" name="IA_CC" required>
     <hr width="100%" color="black">
     <h1 class="theme-popup-title">Popup</h1>
-    <input type="text" placeholder="Font Name" required>
-    <input type="text" placeholder="Font Size" required>
-    <span class-"theme-popup-fg">Foreground</span>
-    <input type="color" name="Foreground" required>
+    <input type="text" placeholder="Font Name" name="P_FN" required>
+    <input type="text" placeholder="Font Size" name="P_FS" required>
     <span class-"theme-popup-bg">Background</span>
-    <input type="color" name="Background" required>
-    <button>Create & Download</button>
+    <input type="color" name="P_BG" required>
+    <span class-"theme-popup-fg">Foreground</span>
+    <input type="color" name="P_FG" required>
+    <button onclick="generate()">Create & Download</button>
   </form>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
