@@ -11,12 +11,13 @@
 </head>
 <body>
   <form id="formel">
-    <h1 class="theme-main-title" onclick="generate()">Main</h1>
+    <h1 class="theme-main-title" onclick="console.log(decodeURI(generate()));">Main</h1>
     <span class="theme-main-color">Main Color</span>
     <input type="color" name="MainColor" required=>
     <input type="text" placeholder="Theme Name" name="ThemeName" required>
     <input type="text" placeholder="Theme Author" name="ThemeAuthor" required>
-    <input type="text" placeholder="Source/Author Contacts" name="ThemeSrc required">
+    <input type="text" placeholder="Source/Author Contacts (Optional)" id="sourceinp" value="" name="ThemeSrc"">
+    <hr width="100%" color="black">
     <h1 class="theme-text-title">Text Area</h1>
     <input type="text" placeholder="Font Name" name="TA_FN" required>
     <input type="text" placeholder="Font Size" name="TA_FS" required>
@@ -42,9 +43,10 @@
     <input type="color" name="P_BG" required>
     <span class-"theme-popup-fg">Foreground</span>
     <input type="color" name="P_FG" required>
-    <button onclick="generate()">Create & Download</button>
+    <button id="dwn-btn" onclick="console.log(decodeURI(generate()))">Create & Download</button>
   </form>
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="FileSaver.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
